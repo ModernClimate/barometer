@@ -1,0 +1,301 @@
+@import "base";
+
+// Section 4 ---------------------------------------------------------------
+#section4 {
+
+  z-index: 1000;
+  height: 6600px;
+  overflow: hidden;
+
+  .sky {
+    height: 1680px;
+    width: 100%;
+    position: fixed;
+    background: url('imgs/section4_s.jpg');
+    background-size: cover;
+
+    .city {
+      height: 1680px;
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+      background: url('imgs/section4_b.png');
+      background-size: 100% 100%;
+    }
+
+    h1, h4 {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1 {
+      font-weight: 300;
+    }
+    h4 {
+      font-weight: 700;
+      line-height: 40px;
+    }
+
+    .sec4-intro {
+      text-align: center;
+      color: white;
+      margin-top: $top_nav_height + 5px;
+
+      .sec4-header {
+        width: 960px;
+        margin: 0 auto;
+
+        h1, h4 {
+          float: left;
+          @include text-shadow(1px 0px 13px #000000);
+        }
+
+        h1 {
+          font-size: 72px;
+          line-height: 90px;
+        }
+        .vertical_line {
+          margin: 10px 16px 0 16px;
+          border-left:2px solid white;
+          height: 100px;
+          float: left;
+        }
+        h4 {
+          font-size: 24px;
+          line-height: 110px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.case_studies_container {
+
+  z-index: 1000;
+  height: 35%;
+  overflow: hidden;
+  padding-top: 20px;
+
+  .expanded .bubble_list {
+    margin-bottom: 300px;
+  }
+
+  .bubble_list {
+    min-height: 101px;
+    margin: 0 auto;
+
+    ul {
+      min-height: 60px;
+      width: 100%;
+
+      li{
+        text-align: center;
+        float: left;
+        color: white;
+        margin: 0 16px 6px;
+        list-style: none;
+        font-family: $header_font;
+
+        display: inline;
+        position: relative;
+
+        p{
+          position: relative;
+        }
+
+      }
+
+      .bubble {
+        position: relative;
+        background: $medium_blue;
+        border-radius: 50%;
+        behavior: url(/PIE.htc);
+        z-index: 1004;
+        text-align: center;
+      }
+
+      li.small_size {
+        /*line-height: 20px;*/
+        .bubble {
+          height: 60px; 
+          width: 60px;
+          border: 2px solid $light_blue;
+          p {
+            font-size: 0px;
+         }
+        }
+      }
+
+      li.peek_size {
+        p {
+          margin-top: 25px;
+          font-size: 9px !important;
+        }
+      }
+
+      li.medium_size {
+        .bubble {
+          height: 90px; 
+          width: 90px;
+          border: 4px solid $light_blue;
+          p {
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 65px;
+          }
+        }
+      }
+
+      li.full_size {
+        .bubble {
+          height: 120px; 
+          width: 120px;
+          font-size: 16px;
+          line-height: 20px;
+          border: 8px solid $light_blue;
+          p{
+            line-height: 125px;
+          }
+        }
+      }
+    }
+
+    .plink_container {
+      z-index: 1006;
+      position: absolute;
+      /*@include transition();*/
+      transition: width 1s, height 1s, font-size .5s, margin 1s, line-height 1s;
+      -webkit-transition: width 1s, height 1s, font-size .5s, margin 1s, line-height 1s; /* Safari */
+    }
+
+    .small_size {
+      font-size: 0px;
+      .plink_container {
+        margin-top: 2px;
+        margin-left: 38px;
+      }
+    }
+
+    .medium_size {
+      height: 86px; 
+      width: 86px;
+      margin: 0px 10px 0px 10px;
+      font-size: 10px;
+
+      .plink_container {
+        margin-top: -4px;
+        margin-left: 56px;
+        .plink {
+          background: $plink_blue;
+        }
+      }
+    }
+
+    .medium_size, .small_size {
+      a.plink{
+        height: 20px;
+        width: 20px;
+        border: 3px solid white;
+      }
+      .plink_container a.plink span {
+        top: -6px;
+        right: 0px;
+        font-size: 22px;
+      }
+    }
+
+    .full_size {
+      .plink_container {
+        margin-top: -15px;
+        margin-left: 40px;
+      }
+    }
+
+  }/*bubble list */
+
+
+  .case_studies_text {
+    .case_study {
+      display: block;
+    }
+
+    position: relative;
+    overflow-y: scroll;
+
+    display: none;
+    background-color: white;
+    font-family: $body_font;
+    height: 100%;
+    margin-left: 0px;
+    color: $medium_blue;
+
+  }
+
+  .case_study {
+    overflow: visible;
+  }
+
+  .expanded .case_studies_text{
+    padding-top: 20px;
+  }
+
+  .case_studies_text {
+    
+    .clink {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      margin-top: 5px;
+      z-index: 10005;
+      span {
+        top: 3px;
+      }
+
+    }
+  }
+
+  div.case_study {
+    display: none;
+    position: relative;
+    padding: 20px;
+
+    background: url('imgs/constellation2.png') no-repeat;
+    background-position: right;
+  }
+
+  .case_study h1 {
+    width: 24%;
+    text-align: right;
+    padding: 0px 20px 0 0;
+
+    font-size: 38px;
+    font-weight: 100;
+    color: black;
+    font-family: $header_font;
+    float: left; 
+    height: 50%;
+  }
+
+  .case_study div.col2 {
+    width: 60%;
+    float: left;
+    padding-bottom: 180px;
+  }
+
+}
+
+/* overrides */
+#section4 {
+  .bubble_list {
+    width: 950px;
+  }
+  .expanded {
+    .bubble_list {
+      width: 845px;
+      .first-second-case{
+        margin-left: 100px;
+      }
+    }
+  }
+}
+

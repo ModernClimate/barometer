@@ -1,0 +1,67 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+/* line 6, ../sass/ie.scss */
+.pop {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17d1fc', endColorstr='#039de8', GradientType=0 );
+  behavior: url(/PIE.htc);
+}
+
+/* line 15, ../sass/ie.scss */
+.intro h2.universe {
+  behavior: url(/PIE.htc);
+}
+/* line 18, ../sass/ie.scss */
+.intro .unified-block {
+  behavior: url(/PIE.htc);
+}
+/* line 21, ../sass/ie.scss */
+.intro .unified-block h4 span.smaller-tm {
+  display: none;
+}
+
+/* line 28, ../sass/ie.scss */
+.person, .person1 .person2, .person3, .person4 {
+  behavior: url(/PIE.htc);
+}
+
+/* line 32, ../sass/ie.scss */
+.people_list .tint {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  behavior: url(/PIE.htc);
+}
+
+/* line 39, ../sass/ie.scss */
+#map .intro .intro-wrapper,
+#map .extro {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF)";
+  /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);
+  /* IE6 & 7 */
+  zoom: 1;
+  /* http://kimili.com/journal/rgba-hsla-css-generator-for-internet-explorer/ */
+}
+
+/* line 48, ../sass/ie.scss */
+#section2 .threesixty {
+  behavior: url(/PIE.htc);
+}
+/* line 50, ../sass/ie.scss */
+#section2 .threesixty ul.plus-links li a {
+  behavior: url(/PIE.htc);
+}
+
+/* line 57, ../sass/ie.scss */
+#section4 .bubble_list {
+  width: 1000px;
+}
+/* line 61, ../sass/ie.scss */
+#section4 .expanded .bubble_list {
+  width: 845px;
+}
+/* line 63, ../sass/ie.scss */
+#section4 .expanded .bubble_list .first-second-case {
+  margin-left: 100px;
+}

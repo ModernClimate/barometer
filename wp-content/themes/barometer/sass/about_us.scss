@@ -1,0 +1,171 @@
+
+@import "compass/utilities/general/clearfix";
+@import "base";
+
+
+body.page-template-page-contact-php {
+  .contact-page {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  }
+}
+
+
+#map {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-image: url('imgs/map2.png');
+  @include background-size(cover);
+  background-position: right top;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+
+
+  .intro {
+    width: 100%;
+    height: 170px;
+    .intro-wrapper { 
+      width: 50%;
+      float: left;
+      background: rgba(255,255,255,.7);
+      color: $medium_blue;
+      margin: 40px 0px 10px 0px;
+
+      @include clearfix;
+
+      .contain {
+        width: 450px;
+        float: right;
+        padding: 20px 0px 10px 10px;
+
+        h2 {
+          font-weight: 300;
+          font-size: 56px;
+          padding-top: 20px;
+          display: block;
+          letter-spacing: 2px;
+          float: left;
+          padding-bottom: 0;
+        }
+        h4 {
+          padding: 0 0 20px 0;
+          display: block;
+          line-height: 26px;
+          float: left;
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+
+  .wrapper {
+    width: 100%;
+    .wrapper-inner {
+      width: 200px;
+      margin: 0 auto;
+      .req {
+        z-index: 2000;
+        position: relative;
+        display: block;
+        float: left;
+        color: white;
+        background: $medium_blue;
+        border: 10px solid $light_blue;
+        width: 175px;
+        height: 175px;
+
+        @include border-radius(800px);
+        @include box-shadow(1px -1px 11px #000000);
+        behavior: url(/PIE.htc);
+
+        &:hover {
+          text-decoration: none;
+        }
+        h3 {
+          font-weight: 300;
+          text-align: center;
+          line-height: 30px;
+          text-transform: uppercase;
+          margin: 41px 0 15px 0;
+        }
+        .plink {
+          position: relative;
+          margin: 0 auto;
+          span {
+            left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .extro {
+    position: fixed;
+    bottom: 0;
+    color: $medium_blue;
+    background: rgba(255,255,255,.7);
+    width: 100%;
+
+    .map-footer {
+      width: 960px;
+      margin: 0 auto;
+      list-style: none;
+      overflow: auto;
+      padding: 5px 30px;
+      a {
+        color: $orange;
+      }
+      li {
+        display: block;
+        margin: 5px 20px 15px 0px;
+
+        float: left;
+        width: 30%;
+        @include clearfix;
+
+        address{
+          margin-bottom: 0px;
+        }
+        a i {
+          color: $orange;
+          text-shadow: 1px 0px 7px rgba(0,0,0, 0.6);
+          font-size: 34px;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        hr {
+          height: 1px;
+          border: none;
+          background: $medium_blue;
+        }
+
+        ul.page-links {
+          margin: 0;
+          a {
+            color: $medium_blue;
+            font-weight: bold;
+          }
+        }
+
+        ul.website-links {
+          margin: 0;
+          li {
+            margin: 0;
+            width: 100%;
+          }
+          a {
+            color: $medium_blue;
+          }
+        }
+      }
+
+    }
+  }
+}
+

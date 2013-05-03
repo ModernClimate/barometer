@@ -1,0 +1,69 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ */
+
+
+.pop {
+  filter: progid:DXImageTransform.Microsoft.gradient( 
+    startColorstr='#17d1fc', 
+    endColorstr='#039de8',
+    GradientType=0 
+  );
+  behavior: url(/PIE.htc);
+}
+
+.intro {
+  h2.universe {
+    behavior: url(/PIE.htc);
+  }
+  .unified-block {
+    behavior: url(/PIE.htc);
+    h4 {
+      span.smaller-tm { 
+        display:none;
+      }
+    }
+  }
+}
+
+.person, .person1 .person2, .person3, .person4 {
+  behavior: url(/PIE.htc);
+}
+
+.people_list .tint {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; 
+  filter: alpha(opacity=80);
+  behavior: url(/PIE.htc);
+}
+
+#map .intro .intro-wrapper,
+  #map .extro {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF)"; /* IE8 */    
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);   /* IE6 & 7 */      
+  zoom: 1;
+  /* http://kimili.com/journal/rgba-hsla-css-generator-for-internet-explorer/ */
+}
+
+#section2 {
+  .threesixty {
+    behavior: url(/PIE.htc);
+    ul.plus-links li a {
+      behavior: url(/PIE.htc);
+    }
+  }
+}
+
+#section4 {
+  .bubble_list {
+    width: 1000px;
+  }
+  .expanded {
+    .bubble_list {
+      width: 845px;
+      .first-second-case{
+        margin-left: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+body {
+	padding-top: 50px;
+}
+.navbar {
+	box-shadow: none;
+	border: 0;
+}
+.navbar-inverse .navbar-inner {
+	background: #000;
+	border: 0;
+}
+.navbar .nav>li {
+	margin-top: 5px;
+}
+.navbar .nav>li>a {
+	color: #fff;
+	opacity: 1;
+}
+.row-fluid .background {
+	height: 900px;
+}
+
+/* levels */
+.level-1 {
+	z-index: 1;
+	position: absolute;
+}
+.level-2 {
+	z-index: 2;
+	position: absolute;
+}
+.level-3 {
+	z-index: 3;
+	position: absolute;
+}
+
+/* small stars */
+.small-stars {
+	background: url('imgs/small_stars.png');
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/* sections */
+.nova {
+	background: url('imgs/nova.jpg');
+	height: 890px;
+}
+
+.section2 {
+	height: 900px;
+}
+.section2 .circle {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 40px auto 0 auto;
+	border-radius: 800px;
+	border: 10px solid white;
+}
+.section3 {
+	height: 900px;
+}
+
+.section-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/* section nav */
+.section-nav {
+	position: fixed;
+	top: 200px;
+	right: 20px;
+	z-index: 200;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.section-nav li {
+	margin-bottom: 10px;
+}
+.section-nav li.line {
+	width: 1px;
+	background: #fff;
+	height: 20px;
+	display: block;
+	margin-left: 8px;
+}
+.section-nav li a {
+	display: block;
+	background: #fff;
+	border-radius: 50px;
+	height: 16px;
+	width: 16px;
+	box-shadow: 1px 0 9px rgba(0, 0, 0, 0.6);
+}
+.section-nav li a:hover {
+	background: #f38018;
+}
+.section-nav li a.active {
+	background: #16AFFF;
+}
+.section-nav .pop .arrow {
+	background: url("imgs/sprites.png") no-repeat scroll -72px -68px transparent;
+    height: 18px;
+    left: auto;
+    position: absolute;
+    right: -9px;
+    top: 7px;
+    width: 12px;
+}
+
+/* plus links */
+.plus-link {
+	transition: .5s all;
+	border-radius: 500px;
+	border: 5px #fff solid;
+	background: #F28018;
+	color: #fff;
+	font-size: 34px;
+	font-weight: bold;
+	font-family: "Open Sans", sans-serif;
+	box-shadow: 1px 0 9px rgba(0, 0, 0, 0.6);
+	padding: 4px;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	overflow: visible;
+	z-index: 1200;
+}
+.plus-link:hover {
+	transition: .5s all;
+	cursor: pointer;
+	background: #89A9cc;
+}
+
+.pop {
+	white-space: nowrap;
+	display: none;
+	color: white;
+	text-transform: uppercase;
+	font-family: "ProximaNovaA-Bold", sans-serif;
+	text-shadow: none;
+	position: absolute;
+	font-size: 13px;
+	padding: 6px 20px;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background: #17d1fc;
+	background: -moz-linear-gradient(top, #17d1fc 0%, #05a9ef 72%, #01a0ec 94%, #039de8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #17d1fc), color-stop(72%, #05a9ef), color-stop(94%, #01a0ec), color-stop(100%, #039de8));
+	background: -webkit-linear-gradient(top, #17d1fc 0%, #05a9ef 72%, #01a0ec 94%, #039de8 100%);
+	background: -o-linear-gradient(top, #17d1fc 0%, #05a9ef 72%, #01a0ec 94%, #039de8 100%);
+	background: -ms-linear-gradient(top, #17d1fc 0%, #05a9ef 72%, #01a0ec 94%, #039de8 100%);
+	background: linear-gradient(to bottom, #17d1fc 0%, #05a9ef 72%, #01a0ec 94%, #039de8 100%);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: -1px 1px 9px black;
+	-moz-box-shadow: -1px 1px 9px black;
+	box-shadow: -1px 1px 9px black;
+	width: auto;
+}
+
+.pop .arrow {
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	margin-left: -9px;
+	background: url("imgs/sprites.png") no-repeat -69px -52px;
+	width: 18px;
+	height: 13px;
+}
+
+.step-img {
+	display: none;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 1000;
+}
