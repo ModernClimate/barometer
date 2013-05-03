@@ -74,7 +74,7 @@
   $(function () {
 
     // section scrollTO
-    $('.section-nav a').click(function (evt) {
+    $('.section-nav a').on('click touchstart', function (evt) {
       evt.preventDefault();
       $('.section-nav a').removeClass('active');
       $(this).addClass('active');
@@ -88,7 +88,7 @@
     });
 
     //plusLink click
-    $('.plus-link').click(function () {
+    $('.plus-link').on('click touchstart', function () {
       $('.pop, .step-img').fadeOut();
       $('.pop', this)
         .css({
