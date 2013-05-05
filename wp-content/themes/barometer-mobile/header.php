@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<!--
-UNCOMMENT THIS OUT TO USE WITH BOOTSTRAP CSS IN STYLES.CSS
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
--->
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title>
   <?php
@@ -30,12 +27,12 @@ UNCOMMENT THIS OUT TO USE WITH BOOTSTRAP CSS IN STYLES.CSS
       </button>
       <a class="brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/css/imgs/logo.png" style="width:75px;"></a>
       <div class="nav-collapse collapse">
-        <ul class="nav pull-right">
-          <li><a class="unified-it-page" href="/">Unified IT</a></li>
-	      <li><a class="solutions-page" href="/solutions">Solutions</a></li>
-	      <li><a class="about-us-page" href="/about-us">About Us</a></li>
-	      <li><a class="contact-page" href="/contact">Contact</a></li>
-        </ul>
+        <?php
+        	wp_nav_menu(array(
+        		'menu' => 'Main',
+        		'menu_class' => 'nav pull-right'
+        	));
+        ?>
       </div><!--/.nav-collapse -->
     </div>
   </div>
