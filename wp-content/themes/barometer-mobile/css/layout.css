@@ -46,6 +46,52 @@ body {
 	height: 100%;
 }
 
+/* about us */
+.person {
+	background: #089edf;
+	height: 140px;
+	width: 140px;
+	border-radius: 500px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 25px;
+}
+.person .person_info {
+	font-size: 22px;
+	padding-top: 25px;
+	line-height: 24px;
+}
+.person .contact_info {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family: 'Open Sans Bold', sans-serif;
+	line-height: 12px;
+	margin-top: 5px;
+}
+.person .envelope {
+	position: absolute;
+	left: 50%;
+	bottom: 14px;
+	margin-left: -9px;
+}
+.about-content p {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'ProximaNova-Regular', sans-serif;
+}
+.about-us {
+	background: #295e9f;
+}
+.about-us h1 {
+	text-align: center;
+	padding: 80px 0;
+	font-size: 50px;
+}
+.about-content h2 {
+	font-size: 20px;
+	font-family: 'ProximaNovaA-Bold', sans-serif;
+}
+
 /* sections */
 .nova {
 	background: url('imgs/nova.jpg');
