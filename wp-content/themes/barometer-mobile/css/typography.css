@@ -35,6 +35,14 @@ h4 {
 	margin-top: 22px;
 }
 
+.page-title {
+	text-shadow: 0 0 20px #000;
+	text-align: center;
+	display: block;
+	font-size: 57px;
+	margin-top: 100px;
+}
+
 /* @license
  * MyFonts Webfont Build ID 2532131, 2013-04-16T17:38:58-0400
  *
