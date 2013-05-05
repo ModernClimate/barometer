@@ -54,7 +54,7 @@
 				<li>Generate a unified view of diverse IT portfolio assets.</li>
 				<li>Optimize IT assets, resources, and capabilities.</li>
 				<li>Manage IT-related business risk.</li>
-				<li>Synchronize your IT Enterprise.</li>
+				<li><a href="#" class="solution-link" data-page="synchronize">Synchronize your IT Enterprise.</a></li>
 			</ul>
 		</p>
 	</div>
@@ -69,7 +69,7 @@
 				<li>Improve communication and eliminate time wasted reconciling differences.</li>
 				<li>Drive innovation.</li>
 				<li>Formalize consistent capture of knowledge.</li>
-				<li>Empower your most valuable asset.</li>
+				<li><a href="#" class="solution-link" data-page="empower">Empower your most valuable asset.</a></li>
 			</ul>
 		</p>
 	</div>
@@ -85,7 +85,7 @@
 				<li>Adapt to change while maintaining the flexibility to meet new challenges with the right skills, attitudes, and goals.</li>
 				<li>Shift growing levels of responsibility and decision-making down through the organization.</li>
 				<li>Identify resource impacts.</li>
-				<li>Anticipate your next problem...and solution.</li>
+				<li><a href="#" class="solution-link" data-page="anticipate">Anticipate your next problem...and solution.</a></li>
 			</ul>
 		</p>
 	</div>
@@ -100,7 +100,7 @@
 				<li>Meet company objectives.</li>
 				<li>Deliver on time and on budget.</li>
 				<li>Mitigate risk.</li>
-				<li>Innovate new solutions.</li>
+				<li><a href="#" class="solution-link" data-page="innovative">Innovate new solutions.</a></li>
 			</ul>
 		</p>
 	</div>
@@ -115,7 +115,7 @@
 				<li>Create “aha!” moments as hidden innovation opportunities are unveiled.</li>
 				<li>Focus on what matters.</li>
 				<li>Enlist everyone.</li>
-				<li>Optimize your IT value chain.</li>
+				<li><a href="#" class="solution-link" data-page="optimize">Optimize your IT value chain.</a></li>
 			</ul>
 		</p>
 	</div>
@@ -130,7 +130,7 @@
 				<li>Remove bottlenecks.</li>
 				<li>Increase visibility.</li>
 				<li>Change rapidly.</li>
-				<li>Simplify your IT universe.</li>
+				<li><a href="#" class="solution-link" data-page="simplify">Simplify your IT universe.</a></li>
 			</ul>
 		</p>
 	</div>
@@ -145,7 +145,7 @@
 				<li>Kick the 80/20 budget habit.</li>
 				<li>Drive innovation.</li>
 				<li>Eliminate waste.</li>
-				<li>Allocate your strategic resources.</li>
+				<li><a href="#" class="solution-link" data-page="allocate">Allocate your strategic resources.</a></li>
 			</ul>
 		</p>
 	</div>
@@ -160,7 +160,7 @@
 				<li>Minimize impacts.</li>
 				<li>Reduce costs.</li>
 				<li>Meet business objectives.</li>
-				<li>Accelerate your IT operations.</li>
+				<li><a href="#" class="solution-link" data-page="accelerate">Accelerate your IT operations.</a></li>
 			</ul>
 		</p>
 	</div>
@@ -183,14 +183,11 @@
 
 <script type="text/javascript">
 	$(function () {
-		$('.solution-circle, .plus-link').on('touchEnd click', function () {
+		$('.solution-circle, .plus-link, .solution-link').on('touchEnd click', function (evt) {
+			evt.preventDefault();
 			$('.active-circle').removeClass('active-circle');
-			if ($(this).parent().hasClass('solution-circle')) {
-				$(this).parent().addClass('active-circle');
-			} else {
-				$(this).addClass('active-circle');
-			}
 			var pane = $(this).attr('data-page');
+			$('.solution-circle[data-page="'+pane+'"]').addClass('active-circle');
 			$('.active-pane').removeClass('active-pane').fadeOut(400, function () {
 				$('#page-'+pane).addClass('active-pane').fadeIn();
 			});
