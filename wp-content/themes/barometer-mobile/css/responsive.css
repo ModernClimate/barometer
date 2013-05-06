@@ -15,6 +15,16 @@
 	.section2-main {
 		margin-top: 0;
 	}
+	.section-background {
+		height: auto;
+		width: 100%;
+	}
+	.contact-page .top {
+		padding: 20px 0 20px;
+	}
+	.contact-circle {
+		top: 160px;
+	}
 }
 
 /* Portrait tablet to landscape and desktop */
