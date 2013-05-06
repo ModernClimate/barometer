@@ -193,6 +193,9 @@ body {
 .section2 {
 	height: 900px;
 }
+.section2-main {
+	margin-top: 100px;
+}
 .section2 .circle {
 	position: relative;
 	width: 400px;
@@ -336,8 +339,8 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100%;
 	width: 100%;
+	vertical-align: top;
 }
 .list-holder {
 	position: absolute;

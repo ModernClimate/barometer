@@ -28,7 +28,7 @@
   </div>
 
   <div class="row-fluid section2 section" id="section2">
-    <div class="span12 level-3 center" style="margin-top: 100px;">
+    <div class="span12 level-3 center section2-main">
       <h1>See your world like never before.</h1>
       <h4>A collective consciousness of your IT portfolios from every angle.</h4>
       <div class="circle">

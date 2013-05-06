@@ -1,4 +1,23 @@
 /* Portrait tablet to landscape and desktop */
+@media (width: 1024px) {
+	.section1-logo {
+		top: 0;
+	}
+	.section1-constelation {
+		top: 20%;
+	}
+	.section1-constelation img {
+		max-width: 60%;
+	}
+	.section1-footer {
+		bottom: 4%;
+	}
+	.section2-main {
+		margin-top: 0;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	body {
 		margin: 0;
