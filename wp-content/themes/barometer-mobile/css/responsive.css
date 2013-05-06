@@ -43,10 +43,217 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+	.navbar-fixed-top .navbar-inner {
+		padding: 0;
+		margin: 0;
+	}
+	.section {
+		overflow: hidden;
+	}
+	.section-nav {
+		display: none;
+	}
+	.section-background {
+		height: 100%;
+	}
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
+	html, body {
+		margin: 0;
+		padding: 25px 0 0 0;
+	}
+	.navbar-fixed-top {
+		margin-bottom: 0;
+		position: fixed;
+	}
+	.navbar-fixed-top .navbar-inner {
+		padding: 0 10px;
+		margin: 0;
+	}
+	.navbar-inner .container {
+		padding: 0 10px;
+		margin: 0;
+	}
+	.section {
+		overflow: hidden;
+	}
+	.section1-logo {
+		top: 3%;
+		width: 300px;
+		left: 50%;
+		margin-left: -150px;
+	}
+	.section1-constelation {
+		display: none;
+	}
+	.section1-constelation img {
+		max-width: 60%;
+	}
+	.section1-footer {
+		bottom: 18%;
+		margin-top: 15px;
+		padding: 15px;
+		width: auto;
+	}
+	.section1-footer h2 {
+		font-size: 24px;
+	}
+	.section1-footer p {
+		font-size: 16px;
+	}
+	.section-nav {
+		display: none;
+	}
+	.section2 .circle {
+		height: 250px;
+		width: 250px;
+	}
+	.section-background {
+		height: 100%;
+	}
+	.section2-main {
+		margin-top: 0;
+	}
+	.image-360 {
+		width: 90%;
+		margin-top: 40px !important;
+	}
+	.expert-guidance-plus {
+		margin: -23px 0 0 -18px;
+	}
+	.member-engagement-plus {
+		margin: 180px 0 0 -127px;
+	}
+	.in-real-time-plus {
+		margin: 199px 0 0 74px;
+	}
+	.step-img {
+		width: 95%;
+		top: 7px;
+		left: 6px;
+	}
+	.section2 .pop {
+		width: 100px;
+		white-space: normal;
+	}
+	.section3-slide-mobile {
+		display: block;
+		width: auto !important;
+		padding: 20px;
+		top: 0;
+		left: 0;
+		margin: 0;
+	}
+	.section3-slide {
+		display: none;
+	}
+	.section3-slide-mobile h1 {
+		font-size: 42px;
+	}
+	.section3-slide-mobile p {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	.section3-circle {
+		margin: 0;
+		height: 100px;
+		width: 100px;
+	}
+	.section3-circle .circle-title {
+		font-size: 12px;
+		margin-top: 24px;
+	}
+	.section3-circle .circle-detail {
+		font-size: 12px;
+		margin-top: 0;
+	}
+	.section3-circle .plus-link {
+		top: 85px;
+		left: 32px;
+	}
+	.section3-circle-holder {
+		margin-top: 230px;
+	}
+	.list-holder {
+		top: 400px;
+		left: 10px;
+	}
+	.footer a .plus-link {
+		display: none;
+	}
+	.page-title {
+		font-size: 34px;
+		margin-top: 10px;
+	}
+	.solutions-pages .container {
+		padding: 0 20px;
+	}
+	.solution-circle-holder {
+		margin-top: 0;
+	}
+	.about-content {
+		padding: 0 20px;
+		width: auto;
+	}
+	.about-us h1 {
+		font-size: 36px;
+		padding: 40px 0;
+	}
+	.about-us .person-row {
+		text-align: center;
+		width: auto;
+		margin-left: 30px;
+	}
+	.about-us .span3 {
+		float: left;
+		width: auto;
+	}
+	.about-us .span3:nth-child(even) {
+		margin-left: 30px;
+	}
+	.contact-page .top {
+		padding: 20px 0;
+		height: auto;
+	}
+	.contact-page .top h2 {
+		padding: 0;
+		margin: 0;
+		line-height: 42px;
+		font-size: 36px;
+	}
+	.contact-page .top h5 {
+		padding: 0;
+		margin: 0;
+	}
+	.contact-page {
+		background: url('imgs/map.jpg') -810px -20px;
+	}
+	.contact-circle {
+		top: 120px;
+		left: 110px;
+	}
+	.contact-page .web-content, .contact-page .span1 {
+		display: none;
+	}
+	.contact-page .span3 {
+		float: left;
+		padding: 10px;
+		width: auto;
+	}
+	.contact-page .bottom ul {
+		font-size: 12px;;
+	}
+	.phone-right {
+		float: right !important;
+	}
 }

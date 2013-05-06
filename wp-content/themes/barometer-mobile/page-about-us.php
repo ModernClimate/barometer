@@ -5,7 +5,7 @@
 <h1>People Driven IT.<font class='smaller'>&#0153;</font></h1>
 
 <div class="container">
-	<div class="row-fluid">
+	<div class="row-fluid person-row">
 
 		<div class="span3">
 			<div class="person">
@@ -51,7 +51,7 @@
 </div>
 
 <div class="container">
-	<div class="row-fluid">
+	<div class="row-fluid person-row">
 
 		<div class="span3">
 			<div class="person">

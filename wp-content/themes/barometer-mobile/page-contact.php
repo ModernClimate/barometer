@@ -28,7 +28,7 @@
 					</ul>
 				</div>
 				<div class="span1"></div>
-				<div class="span3">
+				<div class="span3 phone-right">
 					<h4>Connect</h4>
 					<ul>
 						<li>
@@ -41,7 +41,7 @@
 					</ul>
 				</div>
 				<div class="span1"></div>
-				<div class="span3">
+				<div class="span3 web-content">
 					<h4>Website</h4>
 					<ul>
 						<li>

@@ -34,7 +34,7 @@
       <div class="circle">
 
         <!-- EXPERT GUIDANCE -->
-        <div class="plus-link" data-img="step-img-1" style="margin:-23px 0 0 -18px;">
+        <div class="plus-link expert-guidance-plus" data-img="step-img-1">
           +
           <div class="pop">
             <div class="arrow"></div>
@@ -43,7 +43,7 @@
         </div>
 
         <!-- MEMBER ENGAGEMENT -->
-        <div class="plus-link" data-img="step-img-3" style="margin:234px 0 0 -217px;">
+        <div class="plus-link member-engagement-plus" data-img="step-img-3">
           +
           <div class="pop">
             <div class="arrow"></div>
@@ -53,7 +53,7 @@
 
 
         <!-- IN REAL TIME -->
-        <div class="plus-link" data-img="step-img-2" style="margin:320px 0 0 134px;">
+        <div class="plus-link in-real-time-plus" data-img="step-img-2">
           +
           <div class="pop" id="pop3">
             <div class="arrow"></div>
@@ -65,7 +65,7 @@
         <img src="<?php bloginfo('template_directory'); ?>/css/imgs/cr1.png" class="step-img" id="step-img-2" />
         <img src="<?php bloginfo('template_directory'); ?>/css/imgs/cr2.png" class="step-img" id="step-img-1" />
 
-        <img src="<?php bloginfo('template_directory'); ?>/css/imgs/unified_360.png" style="margin-top:80px;" />
+        <img src="<?php bloginfo('template_directory'); ?>/css/imgs/unified_360.png" class="image-360" style="margin-top:80px;" />
       </div>
     </div>
     <img class="section-background" src="<?php bloginfo('template_directory'); ?>/css/imgs/section2.jpg" />
@@ -73,6 +73,7 @@
 
   <div class="row-fluid section3 section" id="section3">
 
+    <!-- section 3 main styles -->
     <div class="section3-header section3-slide active-slide level-3">
       <table>
         <tbody>
@@ -131,6 +132,27 @@
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <!-- section 3 phone styles -->
+    <div class="section3-header section3-slide-mobile active-slide level-3">
+      <h1>Enjoy the view.</h1>
+      <p>Increased visibility empowers you to make the most of every decision, every resource, every contribution–every time.</p>
+    </div>
+
+    <div class="section3-header section3-slide-mobile section3-slide-1 level-3" style="display:none;">
+      <h1>Elevate.</h1>
+      <p>barometerIT organizes your portfolio fragments into a single, unified view-connecting the dots and empowering you to make smarter, more confident decisions.</p>
+    </div>
+
+    <div class="section3-header section3-slide-mobile section3-slide-2 level-3" style="display:none;">
+      <h1>Expand.</h1>
+      <p>barometerIT leverages the contributions of your team, creating a powerful real-time IT knowledge matrix. From here, the possibilites are endless.<br>&nbsp;&nbsp;&nbsp;</p>
+    </div>
+
+    <div class="section3-header section3-slide-mobile section3-slide-3 level-3" style="display:none;">
+      <h1>Spark.</h1>
+      <p>barometerIT enables every member to make a difference. Members share information in a nimble, easy-to-use platform, while increasing the visibility of their individual skills, talents, and knowledge.</p>
     </div>
 
     <div class="section3-circle-holder level-3">
@@ -218,23 +240,48 @@
       $(this).addClass('active');
     });
 
-    // section3 tabs
-    $('.section3-tab, .section3-circle').on('touchEnd click', function () {
-      $('.section3-circle').removeClass('active-circle');
-      var slide = $(this).attr('data-num');
-      var parent_top = $(this).position().top;
-      var parent_left = $(this).position().left;
-      $('.active-slide').removeClass('active-slide').fadeOut(400, function () {
-        $('.section3-slide-' + slide).addClass('active-slide').fadeIn(400);
-        $('.section3-slide-' + slide + '.list-holder').css({'left':parent_left});
-        $('.blue-overlay').addClass('opacity-80');
+    var user = "<?php echo $_SERVER['HTTP_USER_AGENT']; ?>";
+    console.debug(user);
+
+    if (user.indexOf('iPhone') != -1) {
+      // section3 tabs
+      $('.section3-tab, .section3-circle').on('touchEnd click', function () {
+        $('.section3-circle').removeClass('active-circle');
+        $('.list-holder').fadeOut();
+        var slide = $(this).attr('data-num');
+        var parent_top = $(this).position().top;
+        var parent_left = $(this).position().left;
+        $('.active-slide').removeClass('active-slide').fadeOut(400, function () {
+          $('.section3-slide-mobile.section3-slide-' + slide).addClass('active-slide').fadeIn(400);
+          $('.list-holder.section3-slide-' + slide).fadeIn();
+          $('.blue-overlay').addClass('opacity-80');
+        });
+        if ($(this).parent().hasClass('section3-circle')) {
+          $(this).parent().addClass('active-circle');
+        } else {
+          $(this).addClass('active-circle');
+        }
       });
-      if ($(this).parent().hasClass('section3-circle')) {
-        $(this).parent().addClass('active-circle');
-      } else {
-        $(this).addClass('active-circle');
-      }
-    });
+    } else {
+      // section3 tabs
+      $('.section3-tab, .section3-circle').on('touchEnd click', function () {
+        $('.section3-circle').removeClass('active-circle');
+        $('.list-holder').fadeOut();
+        var slide = $(this).attr('data-num');
+        var parent_top = $(this).position().top;
+        var parent_left = $(this).position().left;
+        $('.active-slide').removeClass('active-slide').fadeOut(400, function () {
+          $('.section3-slide-' + slide + ':not(".section3-slide-mobile")').addClass('active-slide').fadeIn(400);
+          $('.list-holder.section3-slide-' + slide).css({'left':parent_left}).fadeIn();
+          $('.blue-overlay').addClass('opacity-80');
+        });
+        if ($(this).parent().hasClass('section3-circle')) {
+          $(this).parent().addClass('active-circle');
+        } else {
+          $(this).addClass('active-circle');
+        }
+      });
+    }
   });
   </script>
 
