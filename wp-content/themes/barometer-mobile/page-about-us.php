@@ -225,6 +225,12 @@
 				'offset': -50
 			});
 		});
+		<?php if ($_GET['c'] == '1') { ?>
+			$('#jobs').show();
+			$.scrollTo($('#jobs'), {
+				'offset': -50
+			});
+		<?php } ?>
 	});
 </script>
 
