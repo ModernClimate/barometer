@@ -4,6 +4,7 @@ Theme Name: Barometer Mobile
 
 @import "js/bootstrap/css/bootstrap.min.css";
 @import "js/bootstrap/css/bootstrap-responsive.min.css";
+@import "css/vendor/font-awesome.min.css";
 @import "css/typography.css";
 @import "css/global.css";
 @import "css/layout.css";

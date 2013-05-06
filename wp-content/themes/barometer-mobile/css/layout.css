@@ -46,6 +46,70 @@ body {
 	height: 100%;
 }
 
+/* contact page */
+.contact-page {
+	overflow: hidden;
+	background: url('imgs/map.jpg') top center;
+}
+.contact-page .top {
+	width: 100%;
+	text-align: center;
+	background: url('imgs/white-70.png');
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 80px 0 40px;
+}
+.contact-page .bottom {
+	width: 100%;
+	text-align: center;
+	background: url('imgs/white-70.png');
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px 0;
+}
+.contact-page .bottom {
+	text-align: left;
+}
+.contact-page .bottom h4 {
+	color: #20498d;
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: 'ProximaNova-Regular', sans-serif;
+}
+.contact-page .bottom ul {
+	list-style-type: none;
+	margin: 0;
+	color: #295e9f;
+	font-family: 'ProximaNova-Regular', sans-serif;
+	font-size: 14px;
+	padding: 0;
+}
+.contact-page .bottom ul li {
+	line-height: 18px;
+	margin-bottom: 5px;
+}
+.contact-page .bottom ul li a.orange {
+	color: #f7931d;
+}
+.contact-page .bottom ul li.line {
+	border-bottom: 1px #295e9f solid;
+}
+.contact-page .top h2 {
+	color: #295e9f;
+	font-size: 70px;
+	opacity: 1;
+}
+.contact-page .top h5 {
+	color: #295e9f;
+	font-size: 20px;
+	padding-top: 10px;
+	font-family: 'ProximaNovaA-Bold', sans-serif;
+}
+
 /* about us */
 .person {
 	background: #089edf;
@@ -169,7 +233,7 @@ body {
 	width: 100%;
 	margin-top: 200px;
 }
-.section3-circle, .solution-circle {
+.section3-circle, .solution-circle, .contact-circle {
 	transition: 1s all;
 	background: #295e9f;
 	border: 8px #88b0e1 solid;
@@ -179,6 +243,25 @@ body {
 	box-shadow: 0 0 10px #000;
 	display: inline-block;
 	margin: 37.5px;
+}
+.contact-circle {
+	position: absolute;
+	left: 50%;
+	top: 300px;
+	margin-left: -70px;
+}
+.contact-circle span {
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+	display: block;
+	line-height: 24px;
+	padding-top: 20px;
+}
+.contact-circle .plus-link {
+	position: absolute;
+	top: 82px;
+	left: 52px;
 }
 .solution-circle-holder {
 	margin-top: 40px;
