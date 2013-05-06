@@ -43,7 +43,7 @@
         </div>
 
         <!-- MEMBER ENGAGEMENT -->
-        <div class="plus-link" data-img="step-img-2" style="margin:234px 0 0 -217px;">
+        <div class="plus-link" data-img="step-img-3" style="margin:234px 0 0 -217px;">
           +
           <div class="pop">
             <div class="arrow"></div>
@@ -53,7 +53,7 @@
 
 
         <!-- IN REAL TIME -->
-        <div class="plus-link" data-img="step-img-3" style="margin:320px 0 0 134px;">
+        <div class="plus-link" data-img="step-img-2" style="margin:320px 0 0 134px;">
           +
           <div class="pop" id="pop3">
             <div class="arrow"></div>
