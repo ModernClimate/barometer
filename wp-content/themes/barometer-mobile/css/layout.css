@@ -527,3 +527,9 @@ body {
 .solution-link {
 	text-decoration: underline;
 }
+.tab-pane {
+	color: #fff;
+}
+.tab-pane h3 {
+	line-height: 38px;
+}
