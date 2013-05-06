@@ -240,10 +240,9 @@
       $(this).addClass('active');
     });
 
-    var user = "<?php echo $_SERVER['HTTP_USER_AGENT']; ?>";
-    console.debug(user);
+    var user = "<?php echo wp_is_mobile(); ?>";
 
-    if (user.indexOf('iPhone') != -1) {
+    if (user == "1") {
       // section3 tabs
       $('.section3-tab, .section3-circle').on('touchEnd click', function () {
         $('.section3-circle').removeClass('active-circle');
