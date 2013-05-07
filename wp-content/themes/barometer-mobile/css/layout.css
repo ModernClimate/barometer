@@ -15,6 +15,7 @@ body {
 .navbar .nav>li>a {
 	color: #fff;
 	opacity: 1;
+	filter:alpha(opacity=100);
 }
 .row-fluid .background {
 	height: 900px;
@@ -102,6 +103,7 @@ body {
 	color: #295e9f;
 	font-size: 70px;
 	opacity: 1;
+	filter:alpha(opacity=100);
 }
 .contact-page .top h5 {
 	color: #295e9f;
@@ -541,11 +543,13 @@ body {
 .blue-overlay {
 	background: #20498D;
 	opacity: 0;
+	filter:alpha(opacity=0);
 	width: 100%;
 }
 .opacity-80 {
 	transition: 1s all;
 	opacity: .8;
+	filter:alpha(opacity=80);
 }
 .solution-link {
 	text-decoration: underline;
