@@ -310,13 +310,16 @@ body {
 	border-color: #fff;
 }
 .section3-circle .plus-link {
-	transition: 1s all;
 	position: absolute;
 	top: 55px;
 	left: 125px;
 }
-.section3-circle.active-circle .plus-link, .solution-circle.active-circle .plus-link {
-	transiction: 1s all;
+.solution-circle.active-circle .plus-link {
+	z-index: -1;
+	top: 10px;
+	left: 20px;
+}
+.section3-circle.active-circle .plus-link {
 	display: none;
 }
 .section3-circle .circle-title {
