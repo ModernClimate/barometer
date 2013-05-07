@@ -261,9 +261,11 @@
       $(this).addClass('active');
     });
 
-    var user = "<?php echo wp_is_mobile(); ?>";
-
-    if (user == "1") {
+    <?php 
+      include_once('Mobile_Detect.php');
+      $detect = new Mobile_Detect();
+      if ($detect->isMobile() && !$detect->isTablet()) {
+    ?>
       // section3 tabs
       $('.section3-tab, .section3-circle').on('touchEnd click', function () {
         $('.section3-circle').removeClass('active-circle');
@@ -283,7 +285,7 @@
           $(this).addClass('active-circle');
         }
       });
-    } else {
+    <?php } else { ?>
       // section3 tabs
       $('.section3-tab, .section3-circle').on('touchEnd click', function () {
         $('.section3-circle').removeClass('active-circle');
@@ -308,7 +310,7 @@
           $(this).addClass('active-circle');
         }
       });
-    }
+    <?php } ?>
   });
   </script>
 
