@@ -113,6 +113,10 @@ body {
 }
 
 /* about us */
+.person-row {
+	margin: auto;
+	float: left;
+}
 .person {
 	background: #089edf;
 	height: 140px;
@@ -120,7 +124,8 @@ body {
 	border-radius: 500px;
 	text-align: center;
 	color: #fff;
-	margin-bottom: 25px;
+	margin: 0 10px 20px 10px;
+	float: left;
 }
 .person .person_info {
 	font-size: 22px;

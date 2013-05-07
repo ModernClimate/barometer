@@ -5,39 +5,39 @@
 	<div class="solution-circle-holder">
 		<div class="solution-circle active-circle" data-page="unify">
 			<span>UNIFY</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small" data-page="unify">+</div>
 		</div>
 		<div class="solution-circle" data-page="synchronize">
 			<span>SYNCHRONIZE</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small" data-page="synchronize">+</div>
 		</div>
 		<div class="solution-circle" data-page="empower">
 			<span>EMPOWER</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small data-page="empower"">+</div>
 		</div>
 		<div class="solution-circle" data-page="anticipate">
 			<span>ANTICIPATE</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small" data-page="anticipate">+</div>
 		</div>
 		<div class="solution-circle" data-page="innovative">
 			<span>INNOVATE</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small" data-page="innovative">+</div>
 		</div>
 		<div class="solution-circle" data-page="optimize">
 			<span>OPTIMIZE</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small" data-page="optimize">+</div>
 		</div>
 		<div class="solution-circle" data-page="simplify">
 			<span>SIMPLIFY</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small data-page="simplify"">+</div>
 		</div>
 		<div class="solution-circle" data-page="allocate">
 			<span>ALLOCATE</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small" data-page="allocate">+</div>
 		</div>
 		<div class="solution-circle" data-page="accelerate">
 			<span>ACCELERATE</span>
-			<div class="plus-link plus-link-small">+</div>
+			<div class="plus-link plus-link-small" data-page="accelerate">+</div>
 		</div>
 	</div>
 </div>

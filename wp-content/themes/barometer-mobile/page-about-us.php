@@ -5,9 +5,8 @@
 <h1>People Driven IT.<font class='smaller'>&#0153;</font></h1>
 
 <div class="container">
-	<div class="row-fluid person-row">
-
-		<div class="span3">
+	<div class="row-fluid">
+		<div class="person-row">
 			<div class="person">
 				<div class="person_info">PAUL<br />CRAMER</div>
 				<div class="contact_info">Founder</div>
@@ -15,9 +14,7 @@
 		        	<img src="<?php bloginfo('template_directory'); ?>/css/imgs/small-envelope.png" />
 		        </a>
 		    </div>
-		</div>
 
-		<div class="span3">
 			<div class="person">
 				<div class="person_info">TAMER<br />SELIM</div>
 				<div class="contact_info">VP Product Strategy<br />&amp; Marketing</div>
@@ -25,9 +22,7 @@
 					<img src="<?php bloginfo('template_directory'); ?>/css/imgs/small-envelope.png" />
 				</a>
 			</div>
-		</div>
 
-		<div class="span3">
 			<div class="person">
 				<div class="person_info">TIM<br />WELLS</div>
 				<div class="contact_info">EVP Sales</div>
@@ -35,9 +30,7 @@
 					<img src="<?php bloginfo('template_directory'); ?>/css/imgs/small-envelope.png" />
 				</a>
 			</div>
-		</div>
 
-		<div class="span3">
 			<div class="person">
 				<div class="person_info">JAMIE<br />FRAGOLA</div>
 				<div class="contact_info">VP Business Development</div>
@@ -51,9 +44,8 @@
 </div>
 
 <div class="container">
-	<div class="row-fluid person-row">
-
-		<div class="span3">
+	<div class="row-fluid">
+		<div class="person-row">
 			<div class="person">
 	            <div class="person_info">AARON<br />GJERDE</div>
 	            <div class="contact_info">VP Client Engagement</div>
@@ -61,9 +53,7 @@
 	            	<img src="<?php bloginfo('template_directory'); ?>/css/imgs/small-envelope.png" />
 	            </a>
 	        </div>
-		</div>
 
-		<div class="span3">
 			<div class="person">
 	            <div class="person_info">PAT<br />JOSEPHSON</div>
 	            <div class="contact_info">VP Product Development</div>
@@ -71,19 +61,15 @@
 	            	<img src="<?php bloginfo('template_directory'); ?>/css/imgs/small-envelope.png" />
 	            </a>
 	        </div>
-		</div>
 
-		<div class="span3">
 			<div class="person">
-	            <div class="person_info">GERRY<br />BLANCK</div>
+	            <div class="person_info">GERALD<br />BLANCK</div>
 	            <div class="contact_info">VP Engineering</div>
 	            <a class="envelope" href="mailto:&#103;&#101;&#114;&#114;&#121;&#046;&#098;&#108;&#097;&#110;&#099;&#107;&#064;&#098;&#097;&#114;&#111;&#109;&#101;&#116;&#101;&#114;&#105;&#116;&#046;&#099;&#111;&#109;">
 	            	<img src="<?php bloginfo('template_directory'); ?>/css/imgs/small-envelope.png" />
 	            </a>
 	        </div>
-		</div>
 
-		<div class="span3">
 			<div class="person">
 	            <div class="person_info">BRENT<br />WORDEN</div>
 	            <div class="contact_info">VP Research<br />&amp; Development</div>
@@ -91,8 +77,7 @@
 	            	<img src="<?php bloginfo('template_directory'); ?>/css/imgs/small-envelope.png" />
 	            </a>
 	        </div>
-		</div>
-
+	    </div>
 	</div>
 </div>
 
@@ -100,7 +85,7 @@
 
 <div class="container">
 	<div class="row-fluid about-content center">
-		<p>The barometerIT team is made up of the people who drive IT. In the past, we’ve each played multiple roles to deliver successful IT projects &mdash; enterprise architects, technical leads, developers, project and program managers, business leaders &mdash; and we each felt that something was missing. We wanted a tool that would enable us to work collaboratively, with less waste and more results.</p>
+		<p>The barometerIT team is made up of the people who drive IT. In the past, we’ve each played multiple roles to deliver successful IT projects &mdash; enterprise architects, technical leads, developers, project and program managers, business leaders &mdash; and we each felt that something was missing. We wanted a platform that would enable us to work collaboratively, with less waste and more results.</p>
 	    <h2>We wanted Unified IT in real time.</h2>
 	    <p>And so barometerIT was born &mdash; a platform built for IT + Business, by IT + Business, designed to help us get where we’re going, faster, leaner, together.</p>
 	    <h2>If you enjoy hanging out at the intersection of IT and business, <a href="#" id="join-us">join us</a>.</h2>
@@ -231,6 +216,11 @@
 				'offset': -50
 			});
 		<?php } ?>
+		$('.person-row').css({
+			'width': $('.person-row').width(),
+			'dipslay': 'block',
+			'float': 'none'
+		});
 	});
 </script>
 

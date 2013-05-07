@@ -214,9 +214,8 @@
 		width: auto;
 		margin-left: 30px;
 	}
-	.about-us .span3 {
-		float: left;
-		width: auto;
+	.about-us .person {
+		width: 45%;
 	}
 	.about-us .span3:nth-child(even) {
 		margin-left: 30px;

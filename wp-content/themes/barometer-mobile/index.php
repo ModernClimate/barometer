@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
   <ul class="section-nav">
-    <li><a class="active" href="#section1"></a></li>
+    <li><a class="active" href="#section1" id="section1nav"></a></li>
     <li class="line"></li>
-    <li><a href="#section2"></a></li>
+    <li><a href="#section2" id="section2nav"></a></li>
     <li class="line"></li>
-    <li><a href="#section3"></a></li>
+    <li><a href="#section3" id="section3nav"></a></li>
   </ul>
 
   <div class="row-fluid nova section" id="section1">
@@ -74,7 +74,7 @@
   <div class="row-fluid section3 section" id="section3">
 
     <!-- section 3 main styles -->
-    <div class="section3-header section3-slide active-slide level-3">
+    <div class="section3-parent section3-header section3-slide active-slide level-3">
       <table>
         <tbody>
           <tr>
@@ -206,10 +206,25 @@
 
   <script type="text/javascript">
   $(function () {
-    // adjust section height to match screen height
     $('.section, .blue-overlay').css('height', $(window).height() - 50);
     $(window).on('resize', function () {
       $('.section, .blue-overlay').css('height', $(window).height() - 50);
+    });
+    
+
+    $(window).scroll(function (e) {
+      if(section1.getBoundingClientRect().top < 200 && section1.getBoundingClientRect().top > 0) {
+        $('.section-nav a').removeClass('active');
+        $('#section1nav').addClass('active');
+      }
+      if(section2.getBoundingClientRect().top < 200 && section2.getBoundingClientRect().top > 0) {
+        $('.section-nav a').removeClass('active');
+        $('#section2nav').addClass('active');
+      }
+      if(section3.getBoundingClientRect().top < 200 && section3.getBoundingClientRect().top > 0) {
+        $('.section-nav a').removeClass('active');
+        $('#section3nav').addClass('active');
+      }
     });
 
     // section scrollTO
@@ -224,6 +239,12 @@
           "offset": -50
         }
       );
+      if ($(this).attr('id') == 'section3nav') {
+        $('.blue-overlay').removeClass('opacity-80');
+        $('.section3-circle').removeClass('active-circle');
+        $('.section3-header, .list-holder').fadeOut();
+        $('.section3-parent').addClass('active-slide').fadeIn();
+      }
     });
 
     //plusLink click
@@ -248,8 +269,9 @@
         $('.section3-circle').removeClass('active-circle');
         $('.list-holder').fadeOut();
         var slide = $(this).attr('data-num');
-        var parent_top = $(this).position().top;
-        var parent_left = $(this).position().left;
+          var parent_top = $(this).position().top;
+          var parent_left = $(this).position().left;
+
         $('.active-slide').removeClass('active-slide').fadeOut(400, function () {
           $('.section3-slide-mobile.section3-slide-' + slide).addClass('active-slide').fadeIn(400);
           $('.list-holder.section3-slide-' + slide).fadeIn();
@@ -267,8 +289,14 @@
         $('.section3-circle').removeClass('active-circle');
         $('.list-holder').fadeOut();
         var slide = $(this).attr('data-num');
-        var parent_top = $(this).position().top;
-        var parent_left = $(this).position().left;
+        if ($(this).hasClass('section3-circle')) {
+          var parent_top = $(this).position().top;
+          var parent_left = $(this).position().left;
+        }
+        if ($(this).hasClass('section3-tab')) {
+          var parent_top = $(this).parent().position().top;
+          var parent_left = $(this).parent().position().left;
+        }
         $('.active-slide').removeClass('active-slide').fadeOut(400, function () {
           $('.section3-slide-' + slide + ':not(".section3-slide-mobile")').addClass('active-slide').fadeIn(400);
           $('.list-holder.section3-slide-' + slide).css({'left':parent_left}).fadeIn();
