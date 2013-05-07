@@ -157,7 +157,7 @@
 
     <div class="section3-circle-holder level-3">
       <div class="section3-circle" data-num="1">
-        <span class="circle-title">ELEVATE YOUR DEVISIONS</span>
+        <span class="circle-title">ELEVATE YOUR DECISIONS</span>
         <span class="circle-detail">C-SUITE</span>
         <div class="plus-link section3-tab" data-num="1">+</div>
       </div>
