@@ -206,7 +206,7 @@
 		width: auto;
 	}
 	.about-us h1 {
-		font-size: 36px;
+		font-size: 26px;
 		padding: 40px 0;
 	}
 	.about-us .person-row {
@@ -215,7 +215,7 @@
 		margin-left: 30px;
 	}
 	.about-us .person {
-		width: 45%;
+		width: 42%;
 	}
 	.about-us .span3:nth-child(even) {
 		margin-left: 30px;
@@ -259,5 +259,10 @@
 	}
 	.phone-right {
 		float: right !important;
+	}
+	.person .person_info {
+		font-size: 20px;
+		padding-top: 15px;
+		line-height: 24px;
 	}
 }
