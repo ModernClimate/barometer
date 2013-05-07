@@ -244,6 +244,7 @@
         $('.section3-circle').removeClass('active-circle');
         $('.section3-header, .list-holder').fadeOut();
         $('.section3-parent').addClass('active-slide').fadeIn();
+        $('.plus-link').removeClass('active');
       }
       if ($(this).attr('id') == 'section2nav') {
         $('.section2-main .plus-link').removeClass('active');
@@ -273,6 +274,7 @@
       // section3 tabs
       $('.section3-tab, .section3-circle').on('touchEnd click', function () {
         $('.section3-circle').removeClass('active-circle');
+        $('.plus-link').removeClass('active');
         $('.list-holder').fadeOut();
         var slide = $(this).attr('data-num');
           var parent_top = $(this).position().top;
@@ -293,6 +295,7 @@
       // section3 tabs
       $('.section3-tab, .section3-circle').on('touchEnd click', function () {
         $('.section3-circle').removeClass('active-circle');
+        $('.plus-link').removeClass('active');
         $('.list-holder').fadeOut();
         var slide = $(this).attr('data-num');
         if ($(this).hasClass('section3-circle')) {

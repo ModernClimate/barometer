@@ -29,7 +29,7 @@
 		</div>
 		<div class="solution-circle" data-page="simplify">
 			<span>SIMPLIFY</span>
-			<div class="plus-link plus-link-small data-page="simplify"">+</div>
+			<div class="plus-link plus-link-small" data-page="simplify">+</div>
 		</div>
 		<div class="solution-circle" data-page="allocate">
 			<span>ALLOCATE</span>
