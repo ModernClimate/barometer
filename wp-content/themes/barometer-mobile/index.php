@@ -245,6 +245,10 @@
         $('.section3-header, .list-holder').fadeOut();
         $('.section3-parent').addClass('active-slide').fadeIn();
       }
+      if ($(this).attr('id') == 'section2nav') {
+        $('.section2-main .plus-link').removeClass('active');
+        $('.section2-main .plus-link .pop, .step-img').css('display', 'none');
+      }
     });
 
     //plusLink click
