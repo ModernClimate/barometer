@@ -1,10 +1,7 @@
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 1024px) {
 	.section1-constelation img {
-		max-width: 60%;
-	}
-	.section2-main {
-		margin-top: 0;
+		max-width: 40%;
 	}
 	.section-background {
 		height: auto;
@@ -15,6 +12,9 @@
 	}
 	.contact-circle {
 		top: 160px;
+	}
+	.section2-main {
+		margin-top: 20px;
 	}
 }
 
