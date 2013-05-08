@@ -213,10 +213,7 @@
 	.about-us .person-row {
 		text-align: center;
 		width: auto;
-		margin-left: 30px;
-	}
-	.about-us .person {
-		width: 42%;
+		margin-left: 12px;
 	}
 	.about-us .span3:nth-child(even) {
 		margin-left: 30px;
@@ -261,9 +258,27 @@
 	.phone-right {
 		float: right !important;
 	}
+	.about-us .person {
+		width: 120px;
+		height: 120px;
+		margin: 5px;
+	}
 	.person .person_info {
-		font-size: 20px;
-		padding-top: 15px;
-		line-height: 24px;
+		font-size: 17px;
+		padding-top: 10px;
+		line-height: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.about-us .person {
+		width: 120px;
+		height: 120px;
+		margin: 5px;
+	}
+	.person .person_info {
+		font-size: 17px;
+		padding-top: 10px;
+		line-height: 20px;
 	}
 }
