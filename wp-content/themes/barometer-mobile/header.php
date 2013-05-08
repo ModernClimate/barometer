@@ -15,6 +15,11 @@
 <?php wp_head(); ?>
 <!--[if IE 8]>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/PIE.js"></script>
+<style>
+  .section, .blue-overlay {
+    min-height: 700px !important;
+  }
+</style>
 <![endif]-->
 </head>
 

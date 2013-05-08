@@ -1,16 +1,7 @@
 /* Portrait tablet to landscape and desktop */
-@media (width: 1024px) {
-	.section1-logo {
-		top: 0;
-	}
-	.section1-constelation {
-		top: 20%;
-	}
+@media (max-width: 1024px) {
 	.section1-constelation img {
 		max-width: 60%;
-	}
-	.section1-footer {
-		bottom: 4%;
 	}
 	.section2-main {
 		margin-top: 0;
@@ -67,23 +58,8 @@
 	.blue-overlay {
 		min-height: 440px;
 	}
-	.section1-logo {
-		top: 0;
-		width: 300px;
-		left: 50%;
-		margin-left: -150px;
-	}
-	.section1-constelation {
-		display: none;
-	}
 	.section1-constelation img {
 		max-width: 60%;
-	}
-	.section1-footer {
-		bottom: 10px;
-		margin-top: 15px;
-		padding: 15px;
-		width: auto;
 	}
 	.section1-footer h2 {
 		font-size: 24px;
