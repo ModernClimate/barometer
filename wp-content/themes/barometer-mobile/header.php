@@ -28,6 +28,7 @@
     position: relative;
     margin-left: 10px;
     top: 8px;
+    left: auto;
   } 
   .facebook-link {
     background: url('css/imgs/facebook-logo.png') no-repeat;

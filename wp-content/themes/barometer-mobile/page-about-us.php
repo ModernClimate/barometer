@@ -98,7 +98,7 @@
 
 </div>
 
-<div class="row-fluid" style="background:#235088;display:none;" id="jobs">
+<div class="row-fluid" style="background:#235088;display:none;padding-bottom: 100px;" id="jobs">
 	<div class="container">
 		<br />
 		<h1>Careers</h1>

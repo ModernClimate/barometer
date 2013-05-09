@@ -20,21 +20,147 @@
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-	body {
+	html, body {
 		margin: 0;
+		padding: 0;
+	}
+	.container {
+		padding: 0;
 	}
 	.navbar-fixed-top {
 		margin-bottom: 0;
 		position: fixed;
-		z-index: 5000;
+	}
+	.navbar-fixed-top .navbar-inner {
+		padding: 0 10px;
+		margin: 0;
+	}
+	.navbar-inner .container {
+		padding: 0 10px;
+		margin: 0;
+	}
+	.section {
+		overflow: hidden;
+		min-height: 440px;
+	}
+	.blue-overlay {
+		min-height: 440px;
+	}
+	.section1-constelation img {
+		max-width: 60%;
+	}
+	.section1-footer h2 {
+		font-size: 24px;
+		line-height: 26px;
+	}
+	.section1-footer p {
+		font-size: 16px;
+	}
+	.section-nav {
+		display: none;
 	}
 	.section-background {
 		height: 100%;
 	}
+	.section3-slide-mobile h1 {
+		font-size: 36px;
+		margin: 0;
+		padding: 0;
+	}
+	.section3-slide-mobile p {
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		line-height: 16px;
+		border: 0;
+		text-shadow: 0 0 10px #000;
+	}
+	.section3-circle-holder {
+		margin-top: 180px;
+	}
+	.footer a .plus-link {
+		display: none;
+	}
+	.page-title {
+		font-size: 34px;
+		margin-top: 10px;
+	}
+	.solutions-pages .container {
+		padding: 0 20px;
+	}
+	.solution-circle-holder {
+		margin-top: 0;
+	}
+	.about-content {
+		padding: 0 20px;
+		width: auto;
+	}
+	.about-us h1 {
+		font-size: 26px;
+		padding: 40px 0;
+	}
+	.about-us .person-row {
+		text-align: center;
+		width: auto;
+		margin-left: 12px;
+	}
+	.about-us .span3:nth-child(even) {
+		margin-left: 30px;
+	}
+	.contact-page .top {
+		padding: 20px 0;
+		height: auto;
+	}
+	.contact-page .top h2 {
+		padding: 0;
+		margin: 0;
+		line-height: 32px;
+		font-size: 28px;
+	}
+	.contact-page .top h5 {
+		padding: 0;
+		margin: 0;
+		font-size: 18px;
+	}
+	.contact-page {
+		background: url('imgs/map.jpg') -845px -20px;
+		min-height: 400px;
+	}
+	.contact-circle {
+		top: 100px;
+		left: 110px;
+	}
+	.contact-page .web-content, .contact-page .span1 {
+		display: none;
+	}
+	.contact-page .span3 {
+		float: left;
+		padding: 10px;
+		width: 50%;
+	}
+	.contact-page .bottom {
+		height: 30px;
+	}
+	.contact-page .bottom ul {
+		font-size: 12px;;
+	}
+	.phone-right {
+		float: right !important;
+	}
+	.about-us .person {
+		width: 120px;
+		height: 120px;
+		margin: 5px;
+	}
+	.person .person_info {
+		font-size: 17px;
+		padding-top: 10px;
+		line-height: 20px;
+	}
 }
 
 /* Landscape phones and down */
-@media (max-width: 767px) {
+@media (max-width: 480px) {
 	html, body {
 		margin: 0;
 		padding: 25px 0 0 0;
@@ -164,6 +290,7 @@
 	}
 	.list-holder li {
 		font-size: 12px;
+		line-height: 15px;
 	}
 	.footer a .plus-link {
 		display: none;
@@ -244,9 +371,6 @@
 		padding-top: 10px;
 		line-height: 20px;
 	}
-}
-
-@media (max-width: 480px) {
 	.about-us .person {
 		width: 120px;
 		height: 120px;
