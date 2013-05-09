@@ -49,7 +49,7 @@
 <![endif]-->
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); if (is_page('about-us')) echo 'style="background: #295e9f;"';?>>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">

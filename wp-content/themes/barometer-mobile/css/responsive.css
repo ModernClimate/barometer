@@ -78,12 +78,9 @@
 	.section3-circle-holder {
 		margin-top: 180px;
 	}
-	.footer a .plus-link {
-		display: none;
-	}
 	.page-title {
 		font-size: 34px;
-		margin-top: 10px;
+		margin-top: 100px;
 	}
 	.solutions-pages .container {
 		padding: 0 20px;
@@ -91,18 +88,17 @@
 	.solution-circle-holder {
 		margin-top: 0;
 	}
+	.about-us h1 {
+		margin-top: 30px;
+	}
 	.about-content {
 		padding: 0 20px;
 		width: auto;
 	}
-	.about-us h1 {
-		font-size: 26px;
-		padding: 40px 0;
-	}
 	.about-us .person-row {
 		text-align: center;
 		width: auto;
-		margin-left: 12px;
+		margin-bottom: 30px;
 	}
 	.about-us .span3:nth-child(even) {
 		margin-left: 30px;
