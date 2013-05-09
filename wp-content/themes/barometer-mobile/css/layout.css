@@ -70,7 +70,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	padding: 10px 0;
+	padding: 10px 0 70px;
 }
 .contact-page .bottom {
 	text-align: left;
@@ -257,7 +257,7 @@ body {
 .contact-circle {
 	position: absolute;
 	left: 50%;
-	top: 300px;
+	top: 270px;
 	margin-left: -70px;
 }
 .contact-circle span {
@@ -404,6 +404,7 @@ body {
 .solutions-header {
 	height: 300px;
 	background: url('imgs/solutions.jpg');
+	background-size: cover;
 }
 .solutions-pages .container {
 	padding-top: 16px;
@@ -520,6 +521,9 @@ body {
 	display: block;
 	height: 30px;
 	text-align: center;
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
 }
 .footer .nav {
 	margin-bottom: 0;

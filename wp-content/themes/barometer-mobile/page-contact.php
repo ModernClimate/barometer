@@ -32,9 +32,9 @@
 					<h4>Connect</h4>
 					<ul>
 						<li>
-							<a href="https://www.facebook.com/barometerit" target="_blank" class="orange" style="font-size: 34px;"><i class="icon-facebook-sign"></i></a>
-							<a href="https://twitter.com/barometer" target="_blank" class="orange" style="font-size: 34px;"><i class="icon-twitter-sign"></i></a>
-							<a href="http://www.linkedin.com/company/935099" target="_blank" class="orange" style="font-size: 34px;"><i class="icon-linkedin-sign"></i></a>
+							<a href="https://www.facebook.com/barometerit" target="_blank" class="orange facebook-link" style="font-size: 34px;"><i class="icon-facebook-sign"></i></a>
+							<a href="https://twitter.com/barometer" target="_blank" class="orange twitter-link" style="font-size: 34px;"><i class="icon-twitter-sign"></i></a>
+							<a href="http://www.linkedin.com/company/935099" target="_blank" class="orange linkedin-link" style="font-size: 34px;"><i class="icon-linkedin-sign"></i></a>
 						</li>
 						<li class="line"></li>
 						<li><a href="<?php echo site_url(); ?>/about-us?c=1">Careers</a></li>
@@ -51,7 +51,7 @@
 							<a href="<?php echo site_url(); ?>/#section2">See your world like never before</a>
 						</li>
 						<li>
-							<a href="<?php echo site_url(); ?>/#section3">Your IT Universe</a>
+							<a href="<?php echo site_url(); ?>/#section3">Enjoy the View</a>
 						</li>
 						<li>
 							<a href="<?php echo site_url(); ?>/solutions">Change starts here</a>

@@ -13,11 +13,36 @@
 </title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <?php wp_head(); ?>
-<!--[if IE 8]>
+<!--[if IE]>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/PIE.js"></script>
 <style>
-  .section, .blue-overlay {
-    min-height: 700px !important;
+  .section, .blue-overlay, .contact- {
+    min-height: 750px !important;
+  }
+  .footer a {
+    margin-top: -9px;
+  }
+  .footer a .plus-link {
+    float: none;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    top: 8px;
+  } 
+  .facebook-link {
+    background: url('css/imgs/facebook-logo.png') no-repeat;
+    height: 26px;
+    width: 26px;
+  }
+  .twitter-link {
+    background: url('css/imgs/twitter-logo.png') no-repeat;
+    height: 26px;
+    width: 26px;
+  }
+  .linkedin-link {
+    background: url('css/imgs/linked-in-logo.png') no-repeat;
+    height: 26px;
+    width: 26px;
   }
 </style>
 <![endif]-->

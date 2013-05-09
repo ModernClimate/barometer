@@ -257,4 +257,11 @@
 		padding-top: 10px;
 		line-height: 20px;
 	}
+	.section1-constelation {
+		display: none;
+	}
+	.section1-logo {
+		margin-top: 10px;
+		margin-bottom: 55px;
+	}
 }
