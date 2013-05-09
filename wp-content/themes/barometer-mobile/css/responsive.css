@@ -338,7 +338,7 @@
 	}
 	.contact-page {
 		background: url('imgs/map.jpg') -845px -20px;
-		min-height: 400px;
+		min-height: 500px;
 	}
 	.contact-circle {
 		top: 100px;
@@ -353,10 +353,10 @@
 		width: 50%;
 	}
 	.contact-page .bottom {
-		height: 30px;
+		height: 110px;
 	}
 	.contact-page .bottom ul {
-		font-size: 12px;;
+		font-size: 12px;
 	}
 	.phone-right {
 		float: right !important;

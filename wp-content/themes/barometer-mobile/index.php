@@ -314,14 +314,17 @@
     if(section1.getBoundingClientRect().top < 200 && section1.getBoundingClientRect().top >= 0) {
         $('.section-nav a').removeClass('active');
         $('#section1nav').addClass('active');
+        $('.footer').fadeOut();
       }
       if(section2.getBoundingClientRect().top < 200 && section2.getBoundingClientRect().top >= 0) {
         $('.section-nav a').removeClass('active');
         $('#section2nav').addClass('active');
+        $('.footer').fadeOut();
       }
       if(section3.getBoundingClientRect().top < 200 && section3.getBoundingClientRect().top >= 0) {
         $('.section-nav a').removeClass('active');
         $('#section3nav').addClass('active');
+        $('.footer').fadeIn();
       }
   }
   </script>

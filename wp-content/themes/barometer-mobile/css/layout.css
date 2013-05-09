@@ -406,6 +406,9 @@ body {
 	background: url('imgs/solutions.jpg');
 	background-size: cover;
 }
+.solutions-pages {
+	padding-bottom: 50px;
+}
 .solutions-pages .container {
 	padding-top: 16px;
 	padding-bottom: 16px;
