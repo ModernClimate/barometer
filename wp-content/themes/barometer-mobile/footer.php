@@ -1,6 +1,8 @@
+<?php if (is_home()) { ?>
 <div class="footer">
 	<?php wp_nav_menu( array('menu' => 'footer', 'menu_class' => 'nav pull-right')); ?>
 </div>
+<?php } ?>
 <script type="text/javascript">
 	$(function () {
 		$('.footer li a').append('<span class="plus-link">+</span>');

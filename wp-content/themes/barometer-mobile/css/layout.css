@@ -524,6 +524,7 @@ body {
 	position: fixed;
 	bottom: 0;
 	z-index: 10;
+	display: none;
 }
 .footer .nav {
 	margin-bottom: 0;
