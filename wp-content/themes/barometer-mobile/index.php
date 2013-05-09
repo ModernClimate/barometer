@@ -207,9 +207,9 @@
   <script type="text/javascript">
   $(function () {
     set_nav_dot();
-    $('.section, .blue-overlay').css('height', $(window).height() - 50);
+    $('.section, .blue-overlay, .small-stars').css('height', $(window).height() - 50);
     $(window).on('resize', function () {
-      $('.section, .blue-overlay').css('height', $(window).height() - 50);
+      $('.section, .blue-overlay, .small-stars').css('height', $(window).height() - 50);
     });
     
 

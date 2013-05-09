@@ -13,9 +13,12 @@
 </title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <?php wp_head(); ?>
-<!--[if IE]>
+<!--[if IE 8]>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/PIE.js"></script>
 <style>
+  .brand {
+    width: 120px;
+  }
   .section, .blue-overlay, .contact- {
     min-height: 750px !important;
   }
@@ -44,6 +47,26 @@
     background: url('css/imgs/linked-in-logo.png') no-repeat;
     height: 26px;
     width: 26px;
+  }
+  .small-stars {
+    min-height: 1000px;
+  }
+  .contact-page h2 {
+    line-height: 55px;
+  }
+  .contact-page .top {
+    padding: 20px 0;
+  }
+  .contact-page .bottom {
+    height: 80px;
+    bottom: auto;
+    top: 570px;
+  }
+  .contact-page .contact-circle {
+    top: 200px;
+  }
+  .contact-page {
+    min-height: 700px;
   }
 </style>
 <![endif]-->
