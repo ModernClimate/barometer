@@ -206,6 +206,7 @@
 
   <script type="text/javascript">
   $(function () {
+    set_nav_dot();
     $('.section, .blue-overlay').css('height', $(window).height() - 50);
     $(window).on('resize', function () {
       $('.section, .blue-overlay').css('height', $(window).height() - 50);
@@ -213,18 +214,7 @@
     
 
     $(window).scroll(function (e) {
-      if(section1.getBoundingClientRect().top < 200 && section1.getBoundingClientRect().top > 0) {
-        $('.section-nav a').removeClass('active');
-        $('#section1nav').addClass('active');
-      }
-      if(section2.getBoundingClientRect().top < 200 && section2.getBoundingClientRect().top > 0) {
-        $('.section-nav a').removeClass('active');
-        $('#section2nav').addClass('active');
-      }
-      if(section3.getBoundingClientRect().top < 200 && section3.getBoundingClientRect().top > 0) {
-        $('.section-nav a').removeClass('active');
-        $('#section3nav').addClass('active');
-      }
+      set_nav_dot();
     });
 
     // section scrollTO
@@ -319,6 +309,21 @@
       });
     <?php } ?>
   });
+
+  function set_nav_dot() {
+    if(section1.getBoundingClientRect().top < 200 && section1.getBoundingClientRect().top >= 0) {
+        $('.section-nav a').removeClass('active');
+        $('#section1nav').addClass('active');
+      }
+      if(section2.getBoundingClientRect().top < 200 && section2.getBoundingClientRect().top >= 0) {
+        $('.section-nav a').removeClass('active');
+        $('#section2nav').addClass('active');
+      }
+      if(section3.getBoundingClientRect().top < 200 && section3.getBoundingClientRect().top >= 0) {
+        $('.section-nav a').removeClass('active');
+        $('#section3nav').addClass('active');
+      }
+  }
   </script>
 
 <?php get_footer(); ?>
