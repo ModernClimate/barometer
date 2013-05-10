@@ -1,3 +1,8 @@
+@media (min-width: 1025px) {
+	.section, .small-stars {
+		min-height: 750px;
+	}
+}
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 1024px) {
 	.section1-constelation img {
@@ -57,6 +62,9 @@
 	html, body {
 		margin: 0;
 		padding: 0;
+	}
+	.nova {
+		margin-top: 50px;
 	}
 	.container {
 		padding: 0;
