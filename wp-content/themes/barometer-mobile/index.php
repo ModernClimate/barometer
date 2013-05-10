@@ -262,7 +262,8 @@
       if ($detect->isMobile() && !$detect->isTablet()) {
     ?>
       // section3 tabs
-      $('.section3-tab, .section3-circle').on('touchEnd click', function () {
+      $('.section3-tab, .section3-circle').on('touchEnd click', function (e) {
+        e.stopPropagation();
         $('.section3-circle').removeClass('active-circle');
         $('.plus-link').removeClass('active');
         $('.list-holder').fadeOut();
@@ -283,7 +284,8 @@
       });
     <?php } else { ?>
       // section3 tabs
-      $('.section3-tab, .section3-circle').on('touchEnd click', function () {
+      $('.section3-tab, .section3-circle').on('touchEnd click', function (e) {
+        e.stopPropagation();
         $('.section3-circle').removeClass('active-circle');
         $('.plus-link').removeClass('active');
         $('.list-holder').fadeOut();
