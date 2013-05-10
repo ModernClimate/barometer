@@ -337,7 +337,7 @@
 		min-height: 500px;
 	}
 	.contact-circle {
-		top: 100px;
+		top: -10px;
 		left: 110px;
 	}
 	.contact-page .web-content, .contact-page .span1 {
@@ -349,7 +349,7 @@
 		width: 50%;
 	}
 	.contact-page .bottom {
-		height: 110px;
+		height: 160px;
 	}
 	.contact-page .bottom ul {
 		font-size: 12px;

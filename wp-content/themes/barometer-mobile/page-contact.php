@@ -75,20 +75,6 @@ $(function () {
     $(window).on('resize', function () {
       $('.contact-page').css('height', $(window).height() - 50);
     });
-    <?php if (wp_is_mobile()) { ?>
-    $('.contact-page .bottom').click(function () {
-    	if ($(this).hasClass('open')) {
-    		$(this).animate({
-				'height':'30px'
-			}).removeClass('open');
-    	} else {
-    		$(this).animate({
-				'height':'180px'
-			}).addClass('open');
-    	}
-    });
-    <?php } ?>
-
 });
 
 </script>
