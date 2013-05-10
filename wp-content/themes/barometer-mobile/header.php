@@ -21,6 +21,16 @@
   .section, .blue-overlay, .contact- {
     min-height: 750px !important;
   }
+  .small-stars {
+    min-height: 1000px;
+  }
+  .contact-page .contact-circle {
+    top: 100px;
+  }
+  .contact-page {
+    min-height: 700px;
+    overflow: visible;
+  }
 </style>
 <![endif]-->
 <!--[if IE 8]>
