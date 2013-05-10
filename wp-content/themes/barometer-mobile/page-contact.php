@@ -89,12 +89,7 @@ $(function () {
     });
     <?php } ?>
 
-    $(window).resize(resize_rows());
 });
-
-function resize_rows () {
-	$('.middle').css('height', (($(window).outerHeight() - 50)-($('.top').outerHeight()+$('.bottom').outerHeight())));
-}
 
 </script>
 

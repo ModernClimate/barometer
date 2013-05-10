@@ -61,22 +61,15 @@
   .small-stars {
     min-height: 1000px;
   }
-  .contact-page h2 {
-    line-height: 55px;
-  }
-  .contact-page .top {
-    padding: 20px 0;
-  }
   .contact-page .bottom {
-    height: 80px;
-    bottom: auto;
-    top: 570px;
-  }
-  .contact-page .contact-circle {
-    top: 200px;
+    top: 550px;
   }
   .contact-page {
     min-height: 700px;
+    overflow: visible;
+  }
+  .contact-page .contact-circle {
+    top: 130px;
   }
 </style>
 <![endif]-->
