@@ -99,6 +99,7 @@
 </div>
 
 <div class="row-fluid" style="background:#235088;display:none;padding-bottom: 100px;" id="jobs">
+
 	<div class="container">
 		<br />
 		<h1>Careers</h1>
@@ -108,15 +109,13 @@
 			<li class="active"><a href="#java">Java Engineer</a></li>
 			<li><a href="#ui">UI Engineer</a></li>
 		</ul>
+
 		<div class="tab-content">
+		  
 		  <div class="tab-pane active" id="java">
 		  	<h3>Java Engineer</h3>
-	        <p>
-	        	Barometer is a fast growing Minneapolis software startup built from the ground up by developers. We are pioneering a new market segment, Unified IT, and our product is shaping and defining this segment on a daily basis. Barometer is growing fast and we are looking to build our team of rock star developers.
-	        </p>
-	        <p>
-	        	We have top-notch development talent, experienced management, cool technology, and paying customers. All of this makes Barometer a great place to work, but we did not stop there. We pride ourselves on having built one of the most developer-friendly work environments in the Twin Cities. Here are a few highlights of Barometer’s culture from the previous year:
-	        </p>
+	        <p>Barometer is a fast growing Minneapolis software startup built from the ground up by developers. We are pioneering a new market segment, Unified IT, and our product is shaping and defining this segment on a daily basis. Barometer is growing fast and we are looking to build our team of rock star developers.</p>
+	        <p>We have top-notch development talent, experienced management, cool technology, and paying customers. All of this makes Barometer a great place to work, but we did not stop there. We pride ourselves on having built one of the most developer-friendly work environments in the Twin Cities. Here are a few highlights of Barometer’s culture from the previous year:</p>
 	          <ul>
 	            <li>Free lunches during the last week of each development iteration</li>
 	            <li>Impromptu trips to the movie theater
@@ -125,10 +124,7 @@
 	            <li>Weekly high score contests on our office arcade game
 	            <li>Sonos pumping out the tunes through our office audio system
 	          </ul>
-	        <p>
-	        	We have immediate openings for smart developers who thrive in a dynamic, fast-paced environment and are passionate about delivering software on time, with quality, and no surprises. Do you have an entrepreneurial spirit, want to participate in a culture of leadership, take pride in and own your daily activities? If so, and your background covers the requirements listed below, apply now by emailing <a href="mailto:&#099;&#097;&#114;&#101;&#101;&#114;&#115;&#064;&#098;&#097;&#114;&#111;&#109;&#101;&#116;&#101;&#114;&#105;&#116;&#046;&#099;&#111;&#109;">careers at barometerit.com</a>.
-	        </p>
-
+	        <p>We have immediate openings for smart developers who thrive in a dynamic, fast-paced environment and are passionate about delivering software on time, with quality, and no surprises. Do you have an entrepreneurial spirit, want to participate in a culture of leadership, take pride in and own your daily activities? If so, and your background covers the requirements listed below, apply now by emailing <a href="mailto:&#099;&#097;&#114;&#101;&#101;&#114;&#115;&#064;&#098;&#097;&#114;&#111;&#109;&#101;&#116;&#101;&#114;&#105;&#116;&#046;&#099;&#111;&#109;">careers at barometerit.com</a>.</p>
 	        <h4>Responsibilities</h4>
 	        <ul>
 	          <li>Understand, adhere to, and contribute to standards and best practices</li>
@@ -166,6 +162,7 @@
 	          <li>Bachelors Degree or higher in Computer Science or related field.</li>
 	        </ul>
 		  </div>
+
 		  <div class="tab-pane" id="ui">
 		  	<h3>UI Engineer</h3>
 	        <p>
@@ -206,6 +203,7 @@
 		$('#join-us').click(function (evt) {
 			evt.preventDefault();
 			$('#jobs').show();
+			$('#ui').css('height', $('#java').outerHeight());
 			$.scrollTo($('#jobs'), {
 				'offset': -50
 			});
