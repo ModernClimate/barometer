@@ -1,17 +1,19 @@
 <?php get_header(); ?>
-
 <div class="contact-page">
-	<div class="top level-3">
+	<div class="top">
 		<h2>Make contact.</h2>
 		<h5>Discover the difference of Unified IT.</h5>
 	</div>
 
-	<a class="contact-circle" href="mailto:&#115;&#097;&#108;&#101;&#115;&#064;&#098;&#097;&#114;&#111;&#109;&#101;&#116;&#101;&#114;&#073;&#084;&#046;&#099;&#111;&#109;?subject=Demo Request">
-		<span>REQUEST<br />A DEMO</span>
-		<div class="plus-link">+</div>
-	</a>
 
-	<div class="bottom level-3">
+	<div class="middle">
+		<a class="contact-circle" href="mailto:&#115;&#097;&#108;&#101;&#115;&#064;&#098;&#097;&#114;&#111;&#109;&#101;&#116;&#101;&#114;&#073;&#084;&#046;&#099;&#111;&#109;?subject=Demo Request">
+			<span>REQUEST<br />A DEMO</span>
+			<div class="plus-link">+</div>
+		</a>
+	</div>
+
+	<div class="bottom">
 		<div class="container">
 			<div class="row-fluid">
 				<div class="span3">
@@ -86,7 +88,14 @@ $(function () {
     	}
     });
     <?php } ?>
+
+    $(window).resize(resize_rows());
 });
+
+function resize_rows () {
+	$('.middle').css('height', (($(window).outerHeight() - 50)-($('.top').outerHeight()+$('.bottom').outerHeight())));
+}
+
 </script>
 
 <?php get_footer(); ?>

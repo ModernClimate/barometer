@@ -13,7 +13,7 @@
 		</div>
 		<div class="solution-circle" data-page="empower">
 			<span>EMPOWER</span>
-			<div class="plus-link plus-link-small data-page="empower"">+</div>
+			<div class="plus-link plus-link-small" data-page="empower">+</div>
 		</div>
 		<div class="solution-circle" data-page="anticipate">
 			<span>ANTICIPATE</span>
