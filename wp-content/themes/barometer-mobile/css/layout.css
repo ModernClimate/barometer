@@ -401,6 +401,16 @@ body {
 .section-nav li a.active {
 	background: #16AFFF;
 }
+.section-nav .pop {
+	position: absolute;
+	left: -5555em;
+	margin-top: -8px;
+	top: auto;
+	display: block;
+}
+.section-nav a:hover .pop {
+	left: -180px;
+}
 .section-nav .pop .arrow {
 	background: url("imgs/sprites.png") no-repeat scroll -72px -68px transparent;
     height: 18px;

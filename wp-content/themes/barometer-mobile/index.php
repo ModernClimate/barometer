@@ -1,12 +1,28 @@
 <?php get_header(); ?>
-
+  <!--[if IE]>
   <ul class="section-nav">
-    <li><a class="active" href="#section1" id="section1nav"></a></li>
+    <li><a class="active" href="#section1" id="section1nav">
+      <div class="pop">
+        <div class="arrow"></div>
+        YOUR IT UNIVERSE
+      </div>
+    </a></li>
     <li class="line"></li>
-    <li><a href="#section2" id="section2nav"></a></li>
+    <li><a href="#section2" id="section2nav">
+      <div class="pop">
+        <div class="arrow"></div>
+        SEE YOUR WORLD
+      </div>
+    </a></li>
     <li class="line"></li>
-    <li><a href="#section3" id="section3nav"></a></li>
+    <li><a href="#section3" id="section3nav">
+      <div class="pop">
+        <div class="arrow"></div>
+        ENJOY THE VIEW
+      </div>
+    </a></li>
   </ul>
+  <![endif]-->
 
   <div class="row-fluid nova section" id="section1">
 
