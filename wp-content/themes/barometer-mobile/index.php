@@ -218,7 +218,7 @@
     });
 
     // section scrollTO
-    $('.section-nav a').on('touchend click', function (evt) {
+    $('.section-nav a').on('touchEnd click', function (evt) {
       evt.preventDefault();
       $('.section-nav a').removeClass('active');
       $(this).addClass('active');
@@ -243,7 +243,7 @@
     });
 
     //plusLink click
-    $('.plus-link').on('touchend click', function () {
+    $('.plus-link').on('touchEnd click', function () {
       $('.plus-link').removeClass('active');
       $('.pop, .step-img').fadeOut();
       $('.pop', this)
@@ -262,7 +262,7 @@
       if ($detect->isMobile() && !$detect->isTablet()) {
     ?>
       // section3 tabs
-      $('.section3-tab, .section3-circle').on('touchend click', function () {
+      $('.section3-tab, .section3-circle').on('touchEnd click', function () {
         $('.section3-circle').removeClass('active-circle');
         $('.plus-link').removeClass('active');
         $('.list-holder').fadeOut();
@@ -283,7 +283,7 @@
       });
     <?php } else { ?>
       // section3 tabs
-      $('.section3-tab, .section3-circle').on('touchend click', function () {
+      $('.section3-tab, .section3-circle').on('touchEnd click', function () {
         $('.section3-circle').removeClass('active-circle');
         $('.plus-link').removeClass('active');
         $('.list-holder').fadeOut();
