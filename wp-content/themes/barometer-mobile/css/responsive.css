@@ -360,8 +360,8 @@
 	}
 	.about-us .person-row {
 		text-align: center;
-		width: auto;
-		margin-left: 12px;
+		width: 264px !important;
+		margin: auto;
 	}
 	.about-us .span3:nth-child(even) {
 		margin-left: 30px;
