@@ -118,6 +118,43 @@
 	.section3-circle {
 		margin: 15px;
 	}
+	.page-title {
+		font-size: 38px;
+		margin-top: 60px;
+		line-height: 30px;
+	}
+	.solutions-pages .container {
+		padding: 15px 30px;
+	}
+	.about-us .person {
+		width: 120px;
+		height: 120px;
+		margin: 5px;
+	}
+	.person .person_info {
+		font-size: 17px;
+		padding-top: 10px;
+		line-height: 20px;
+	}
+	.about-content, #jobs {
+		padding: 0 30px;
+		width: auto;
+	}
+	.contact-page .top {
+		padding-top: 40px;
+	}
+	.contact-page .bottom .span3 {
+		float: left;
+		margin: 0;
+		width: 30%;
+		padding: 10px;
+	}
+	.contact-page .bottom .span1 {
+		display: none;
+	}
+	.contact-page {
+		background: url('imgs/map.jpg') 1020px 0;
+	}
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -265,7 +302,7 @@
 @media (max-width: 480px) {
 	html, body {
 		margin: 0;
-		padding: 25px 0 0 0;
+		padding: 0 0 0 0;
 	}
 	.solutions-pages h2 span {
 		display: block;

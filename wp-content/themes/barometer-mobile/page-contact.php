@@ -71,9 +71,9 @@
 
 <script type="text/javascript">
 $(function () {
-	$('.contact-page').css('height', $(window).height() - 50);
+	$('.contact-page').css('height', $(window).height());
     $(window).on('resize', function () {
-      $('.contact-page').css('height', $(window).height() - 50);
+      $('.contact-page').css('height', $(window).height());
     });
 });
 
