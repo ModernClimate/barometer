@@ -126,6 +126,9 @@
 	.solutions-pages .container {
 		padding: 15px 30px;
 	}
+	.solutions-header {
+		margin-top: 50px;
+	}
 	.about-us .person {
 		width: 120px;
 		height: 120px;
@@ -162,6 +165,25 @@
 	html, body {
 		margin: 0;
 		padding: 0;
+	}
+	.section1-constelation img {
+		max-width: 40%;
+	}
+	.section-background {
+		height: auto;
+		width: 100%;
+	}
+	.contact-page .top {
+		padding: 20px 0 20px;
+	}
+	.contact-circle {
+		top: 160px;
+	}
+	.section2-main {
+		margin-top: 20px;
+	}
+	.contact-circle {
+		top: 80px;
 	}
 	.nova {
 		margin-top: 50px;
@@ -246,45 +268,12 @@
 	.about-us .span3:nth-child(even) {
 		margin-left: 30px;
 	}
-	.contact-page .top {
-		padding: 20px 0;
-		height: auto;
-	}
-	.contact-page .top h2 {
-		padding: 0;
-		margin: 0;
-		line-height: 32px;
-		font-size: 28px;
-	}
-	.contact-page .top h5 {
-		padding: 0;
-		margin: 0;
-		font-size: 18px;
-	}
 	.contact-page {
-		background: url('imgs/map.jpg') -845px -20px;
-		min-height: 400px;
-	}
-	.contact-circle {
-		top: 100px;
-		left: 110px;
-	}
-	.contact-page .web-content, .contact-page .span1 {
-		display: none;
-	}
-	.contact-page .span3 {
-		float: left;
-		padding: 10px;
-		width: 50%;
-	}
-	.contact-page .bottom {
-		height: 30px;
+		background: url('imgs/map.jpg') center top;
+		min-height: 700px;
 	}
 	.contact-page .bottom ul {
 		font-size: 12px;;
-	}
-	.phone-right {
-		float: right !important;
 	}
 	.about-us .person {
 		width: 120px;
@@ -469,6 +458,7 @@
 	.contact-page .top {
 		padding: 20px 0;
 		height: auto;
+		margin-top: 35px;
 	}
 	.contact-page .top h2 {
 		padding: 0;
@@ -483,16 +473,16 @@
 	}
 	.contact-page {
 		background: url('imgs/map.jpg') -845px -20px;
-		min-height: 500px;
+		min-height: 550px;
 	}
 	.contact-circle {
-		top: -10px;
+		top: 14px;
 		left: 110px;
 	}
 	.contact-page .web-content, .contact-page .span1 {
 		display: none;
 	}
-	.contact-page .span3 {
+	.contact-page .bottom .span3 {
 		float: left;
 		padding: 10px;
 		width: 50%;
