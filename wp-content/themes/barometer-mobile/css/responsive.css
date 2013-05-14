@@ -184,13 +184,13 @@
 	}
 	.section {
 		overflow: hidden;
-		min-height: 440px;
+		min-height: 650px;
 	}
-	.blue-overlay {
-		min-height: 440px;
+	.blue-overlay, .small-stars {
+		min-height: 650px;
 	}
 	.section1-constelation img {
-		max-width: 60%;
+		max-width: 50%;
 	}
 	.section1-footer h2 {
 		font-size: 24px;
