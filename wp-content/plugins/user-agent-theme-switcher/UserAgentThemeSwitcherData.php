@@ -303,7 +303,7 @@ class UserAgentThemeSwitcherData {
 		
 		$this->addBrowser(new BrowserUA('iceweasel', 'IceWeasel', null, '^Mozilla\/5.0 \(.*\) Gecko\/[\d]+ Iceweasel\/[\d\.]+ \(Debian-.*\).*$', 'gecko'));
 		$this->addBrowser(new BrowserUA('rockmelt', 'RockMelt', null, '^Mozilla\/5.0 \(Macintosh; .*\) AppleWebKit\/534\.24 \(KHTML, like Gecko\) RockMelt\/.* Chrome\/.* Safari\/.*$', 'webkit'));
-		
+		$this->addBrowser(new BrowserUA('android', 'Android', null, 'Mozilla\/5.0 \(.*Android.*\) AppleWebKit\/.* \(KHTML, like Gecko\) Safari\/.*', 'mobile,webkit'));
 		$this->addBrowser(new BrowserUA('ipad', 'iPad', null, '^Mozilla\/5.0 \(iPad; .*\).*$', 'tablet'));
 		$this->addBrowser(new BrowserUA('kindle', 'Amazon Kindle', null, '^Mozilla\/5\.0 \(.*\) AppleWebKit\/.* \(KHTML, like Gecko(.*) Version\/[\d\.]+ Kindle\/.*$', 'tablet'));
 		$this->addBrowser(new BrowserUA('ie7mobile', 'Internet Explorer Mobile 7', null, '^Mozilla\/4\.0 \(compatible; MSIE 7\.0; Windows Phone OS.*\).*$', 'ie,mobile'));

@@ -57,6 +57,69 @@
 	}
 }
 
+/* SMALL TABLET */
+@media (max-width: 610px) {
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	.nova {
+		margin-top: 50px;
+	}
+	.container {
+		padding: 0;
+	}
+	.navbar-fixed-top {
+		margin-bottom: 0;
+		position: fixed;
+		margin-top: 0;
+	}
+	.navbar-fixed-top .navbar-inner {
+		padding: 0 10px;
+		margin: 0;
+	}
+	.navbar-inner .container {
+		padding: 0 10px;
+		margin: 0;
+	}
+	.section1-constelation img {
+		max-width: 90%;
+	}
+	.section1-footer h2 {
+		font-size: 24px;
+		line-height: 26px;
+	}
+	.section1-footer p {
+		font-size: 16px;
+	}
+	.section-nav {
+		display: none;
+	}
+	.section2-main {
+		margin-top: 20px;
+	}
+	.section2-main h1 {
+		font-size: 36px;
+	}
+	.section2-main h4 {
+		font-size: 19px;
+		margin-bottom: 10px;
+	}
+	.section3-header {
+		width: 530px;
+		position: absolute;
+		top: 40px;
+		left: 50%;
+		margin-left: -265px;
+	}
+	.section3-header h1 {
+		font-size: 35px;
+	}
+	.section3-circle {
+		margin: 15px;
+	}
+}
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 769px) and (max-width: 979px) {
 	html, body {
